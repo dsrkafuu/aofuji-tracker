@@ -6,7 +6,7 @@ const getAttr = (key) => {
   return node.getAttribute(`data-${key}`);
 };
 const ID = getAttr('vaid');
-const API = `${/(https?:\/\/.*api)\/?$/i.exec(getAttr('vaapi'))[1]}/collect`;
+const API = getAttr('vaapi');
 const SPA = Boolean(getAttr('vaspa'));
 
 if (ID && navigator.doNotTrack !== '1') {

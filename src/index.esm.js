@@ -7,6 +7,11 @@ import { setSID, getSID, usePVT } from './utils.js';
  * @param {boolean} SPA
  */
 export default function useVector(ID, API, SPA = true) {
+  // ensure api url format
+  const exp = /(https?:\/\/.*api)\/?$/i.exec(API);
+  const api = exp[1];
+  API = api + '/collect';
+
   /**
    * send data to api
    * @param {string} type
