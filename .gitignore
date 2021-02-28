@@ -1,0 +1,18 @@
+# output
+lib/
+
+# env
+.env*
+
+# deps
+.vercel/
+node_modules/
+npm-debug.log*
+.husky/_/
+
+# system
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
