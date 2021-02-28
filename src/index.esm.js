@@ -1,9 +1,7 @@
-/*! vector-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */
-
-import { setSID, getSID, usePVT } from './utils';
+import { setSID, getSID, usePVT } from './utils.js';
 
 /**
- * use vector analytics
+ * use vector analytics tracker
  * @param {string} ID
  * @param {string} API
  * @param {boolean} SPA
@@ -107,7 +105,7 @@ export default function useVector(ID, API, SPA = true) {
     }
   };
 
-  // legacy mode
+  /* autoloader */
   if (!SPA) {
     const path = location.pathname;
     // start view

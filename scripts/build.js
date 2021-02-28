@@ -3,6 +3,7 @@ const fs = require('fs');
 const esbuild = require('esbuild');
 const babel = require('@babel/core');
 const terser = require('terser').minify;
+const footer = '/*! vector-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */';
 
 /* esm file */
 esbuild.buildSync({
@@ -13,6 +14,7 @@ esbuild.buildSync({
   bundle: true,
   minify: true,
   sourcemap: true,
+  footer,
 });
 
 /* iife file */
@@ -24,6 +26,7 @@ esbuild.buildSync({
   format: 'iife',
   target: 'es2020',
   bundle: true,
+  footer,
 });
 const output = path.resolve(__dirname, '../lib/vector.min.js');
 let content = fs.readFileSync(output, { encoding: 'utf-8' });

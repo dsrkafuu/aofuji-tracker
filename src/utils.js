@@ -1,7 +1,7 @@
 /* constants */
 
-export const LS_KEY = 'vec_sid';
-export const [INACTIVE, PAUSE, ACTIVE] = [0, -1, 1];
+const LS_KEY = 'vec_sid';
+const [INACTIVE, PAUSE, ACTIVE] = [0, -1, 1];
 
 /* utils */
 
@@ -16,7 +16,6 @@ export function setSID(val) {
     return;
   }
 }
-
 /**
  * get session id
  * @return {string}
