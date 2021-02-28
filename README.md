@@ -42,6 +42,7 @@ After clone the repo, you can simply:
 
 ```sh
 npm install
+npm run init
 npm run build
 ```
 

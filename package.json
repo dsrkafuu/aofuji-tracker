@@ -1,6 +1,6 @@
 {
   "name": "vector-tracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dedicated tracker for Vector Analytics.",
   "keywords": [
     "analytics",
@@ -18,7 +18,7 @@
     "lib"
   ],
   "scripts": {
-    "postinstall": "husky install",
+    "init": "husky install",
     "build": "eslint && node ./scripts/build.js"
   },
   "devDependencies": {
