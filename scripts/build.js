@@ -7,7 +7,7 @@ const terser = require('terser').minify;
 /* esm file */
 esbuild.buildSync({
   entryPoints: ['src/index.esm.js'],
-  outfile: "lib/index.esm.js",
+  outfile: 'lib/index.esm.js',
   format: 'esm',
   target: 'es6',
   bundle: true,
