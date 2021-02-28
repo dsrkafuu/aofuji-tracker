@@ -1,7 +1,7 @@
 import useVector from './index.esm.js';
 
 // get settings
-const node = document.querySelector('script[data-vecid]');
+const node = document.querySelector('script[data-vaid]');
 const getAttr = (key) => {
   return node.getAttribute(`data-${key}`);
 };
