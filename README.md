@@ -1,5 +1,9 @@
 # Vector Tracker
 
+![](https://img.shields.io/github/workflow/status/dsrkafuu/vector-tracker/npm-publish)
+![](https://img.shields.io/npm/v/vector-tracker)
+![](https://img.shields.io/npm/l/vector-tracker)
+
 Dedicated tracker for Vector Analytics.
 
 - [Documentation](https://appvector.icu)
