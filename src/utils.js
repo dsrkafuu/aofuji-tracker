@@ -1,6 +1,6 @@
 /* constants */
 
-const LS_KEY = 'vec_sid';
+const LS_KEY = 'aosid';
 const [INACTIVE, PAUSE, ACTIVE] = [0, -1, 1];
 
 /* utils */

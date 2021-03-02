@@ -1,7 +1,7 @@
 {
-  "name": "vector-tracker",
-  "version": "0.1.4",
-  "description": "Dedicated tracker for Vector Analytics.",
+  "name": "aofuji-tracker",
+  "version": "0.1.5",
+  "description": "Dedicated tracker for Aofuji Analytics.",
   "keywords": [
     "analytics",
     "statistics",
@@ -9,11 +9,11 @@
     "web-analytics"
   ],
   "author": "DSRKafuU <dsrkafuu@outlook.com> (https://dsrkafuu.su)",
-  "homepage": "https://appvector.icu",
+  "homepage": "https://aofuji.ink",
   "license": "MIT",
   "module": "lib/index.esm.js",
   "browser": "lib/index.esm.js",
-  "repository": "github:dsrkafuu/vector-tracker",
+  "repository": "github:dsrkafuu/aofuji-tracker",
   "files": [
     "lib"
   ],
@@ -23,12 +23,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
-    "esbuild": "^0.8.53",
+    "esbuild": "^0.8.54",
     "eslint": "^7.21.0",
-    "husky": "^5.1.1",
+    "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "terser": "^5.6.0"

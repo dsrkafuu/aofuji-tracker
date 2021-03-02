@@ -3,7 +3,7 @@ const fs = require('fs');
 const esbuild = require('esbuild');
 const babel = require('@babel/core');
 const terser = require('terser').minify;
-const footer = '/*! vector-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */';
+const footer = '/*! aofuji-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */';
 
 /* esm file */
 esbuild.buildSync({
@@ -22,13 +22,13 @@ esbuild.buildSync({
 // build
 esbuild.buildSync({
   entryPoints: ['src/index.js'],
-  outfile: 'lib/vector.min.js',
+  outfile: 'lib/aofuji.min.js',
   format: 'iife',
   target: 'es2020',
   bundle: true,
   footer,
 });
-const output = path.resolve(__dirname, '../lib/vector.min.js');
+const output = path.resolve(__dirname, '../lib/aofuji.min.js');
 let content = fs.readFileSync(output, { encoding: 'utf-8' });
 
 // transform

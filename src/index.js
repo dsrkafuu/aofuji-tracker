@@ -1,19 +1,19 @@
-import useVector from './index.esm.js';
+import useAofuji from './index.esm.js';
 
 // get settings
-const node = document.querySelector('script[data-vaid]');
+const node = document.querySelector('script[data-aoid]');
 const getAttr = (key) => {
   return node.getAttribute(`data-${key}`);
 };
-const ID = getAttr('vaid');
-const API = getAttr('vaapi');
-const SPA = Boolean(getAttr('vaspa'));
+const ID = getAttr('aoid');
+const API = getAttr('aoapi');
+const SPA = Boolean(getAttr('aospa'));
 
 if (ID && navigator.doNotTrack !== '1') {
-  const { vecView, vecLeave, vecEvent } = useVector(ID, API, SPA);
+  const { aoView, aoLeave, aoEvent } = useAofuji(ID, API, SPA);
 
   // expose global funcs
-  window.vecView = vecView;
-  window.vecLeave = vecLeave;
-  window.vecEvent = vecEvent;
+  window.aoView = aoView;
+  window.aoLeave = aoLeave;
+  window.aoEvent = aoEvent;
 }

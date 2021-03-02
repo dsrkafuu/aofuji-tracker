@@ -1,13 +1,13 @@
-# Vector Tracker
+# Aofuji Tracker
 
-![](https://img.shields.io/github/workflow/status/dsrkafuu/vector-tracker/npm-publish)
-![](https://img.shields.io/npm/v/vector-tracker)
-![](https://img.shields.io/npm/l/vector-tracker)
+![](https://img.shields.io/github/workflow/status/dsrkafuu/aofuji-tracker/npm-publish)
+![](https://img.shields.io/npm/v/aofuji-tracker)
+![](https://img.shields.io/npm/l/aofuji-tracker)
 
-Dedicated tracker for Vector Analytics.
+Dedicated tracker for Aofuji Analytics.
 
-- [Documentation](https://appvector.icu)
-- [Repository](https://github.com/dsrkafuu/vector-analytics)
+- [Documentation](https://aofuji.ink)
+- [Repository](https://github.com/dsrkafuu/aofuji-analytics)
 
 ## Getting Started
 
@@ -16,22 +16,22 @@ Dedicated tracker for Vector Analytics.
 ```html
 <script
   async
-  data-vaid="[id]"
-  data-vaapi="[api]"
-  data-vaspa="[true]"
-  src="https://cdn.jsdelivr.net/npm/vector-tracker@0.1/lib/vector.min.js"
+  data-aoid="[id]"
+  data-aoapi="[api]"
+  data-aospa="[true]"
+  src="https://cdn.jsdelivr.net/npm/aofuji-tracker@0.1/lib/aofuji.min.js"
 ></script>
 ```
 
 ### npm
 
 ```sh
-npm install --save vector-tracker
+npm install --save aofuji-tracker
 ```
 
 ```js
-import useVector from 'vector-tracker';
-const { vecView, vecLeave, vecEvent } = useVector('[id]', '[api]', true);
+import useAofuji from 'aofuji-tracker';
+const { aoView, aoLeave, aoEvent } = useAofuji('[id]', '[api]', true);
 ```
 
 ## Contribute
@@ -48,6 +48,6 @@ npm run build
 
 ## License
 
-This project is released under `MIT License`, for more information read the [LICENSE](https://github.com/dsrkafuu/vector-tracker/blob/main/LICENSE).
+This project is released under `MIT License`, for more information read the [LICENSE](https://github.com/dsrkafuu/aofuji-tracker/blob/main/LICENSE).
 
 **Copyright © 2020-present DSRKafuU (https://dsrkafuu.su)**

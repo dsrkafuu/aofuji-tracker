@@ -1,12 +1,12 @@
 import { setSID, getSID, usePVT } from './utils.js';
 
 /**
- * use vector analytics tracker
+ * use aofuji analytics tracker
  * @param {string} ID
  * @param {string} API
  * @param {boolean} SPA
  */
-export default function useVector(ID, API, SPA = true) {
+export default function useAofuji(ID, API, SPA = true) {
   // ensure api url format
   const exp = /(https?:\/\/.*api)\/?$/i.exec(API);
   const api = exp[1];
@@ -73,7 +73,7 @@ export default function useVector(ID, API, SPA = true) {
    * @param {string} path
    * @param {string} ref
    */
-  const vecView = (path, ref) => {
+  const aoView = (path, ref) => {
     // start pvt
     PVT.it();
     // data
@@ -89,7 +89,7 @@ export default function useVector(ID, API, SPA = true) {
    * send leave data
    * @param {string} path
    */
-  const vecLeave = (path) => {
+  const aoLeave = (path) => {
     const data = {
       pvt: PVT.ed() || undefined,
     };
@@ -98,10 +98,11 @@ export default function useVector(ID, API, SPA = true) {
 
   /**
    * send event data
+   * @param {string} path
    * @param {string} name
    * @param {Event|string} e
    */
-  const vecEvent = (path, name, e) => {
+  const aoEvent = (path, name, e) => {
     if (name) {
       sendData('event', path, {
         en: name, // event name
@@ -114,18 +115,18 @@ export default function useVector(ID, API, SPA = true) {
   if (!SPA) {
     const path = location.pathname;
     // start view
-    vecView(path, document.referrer);
+    aoView(path, document.referrer);
     // [safari fix]
     // safari doesn't fire the `visibilitychange` and `beforeunload`
     // when navigating away from a document
     window.addEventListener('pagehide', () => {
-      vecLeave(path);
+      aoLeave(path);
     });
   }
 
   return {
-    vecView,
-    vecLeave,
-    vecEvent,
+    aoView,
+    aoLeave,
+    aoEvent,
   };
 }
