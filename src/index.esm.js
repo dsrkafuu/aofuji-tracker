@@ -9,7 +9,7 @@ import { setSID, getSID, usePVT } from './utils.js';
 export default function useAofuji(ID, API, SPA = true) {
   // ensure api url format
   const exp = /(https?:\/\/.*api)\/?$/i.exec(API);
-  const api = exp[1];
+  const api = exp ? exp[1] : API + '/api';
   API = api + '/collect';
 
   /**
