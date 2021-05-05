@@ -9,6 +9,7 @@ lib/
 node_modules/
 npm-debug.log*
 .husky/_/
+package-lock.json
 
 # system
 Thumbs.db
