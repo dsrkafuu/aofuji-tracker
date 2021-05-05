@@ -3,7 +3,9 @@ const fs = require('fs');
 const esbuild = require('esbuild');
 const babel = require('@babel/core');
 const terser = require('terser').minify;
-const footer = '/*! aofuji-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */';
+const footer = {
+  js: '/*! aofuji-tracker | DSRKafuU (https://dsrkafuu.su) | Copyright (c) MIT License */',
+};
 
 /* esm file */
 esbuild.buildSync({
